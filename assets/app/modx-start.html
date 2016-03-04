@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<base href="[[!++site_url]]" />
+[[$favicons]]
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="[[*description]]">
+<meta name="keywords" content="[[*keywords]]">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/19ff6a6e-345a-4eb2-af1e-5934f0a6f17a.css"/>
+<link rel="stylesheet" href="assets/app/css/app.css" />
+
+<title>[[*longtitle:default=`[[*pagetitle]]`]] | [[++site_name]]</title>
+
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="assets/app/css/ie9.css">
+<![endif]-->
+</head>
+<body>
+<a href="[[~[[*id]]]]#article" title="Skip to Content" class="sr-only">Skip to Content</a>
+<header role="banner">
+  <button id="mobile-menu"></button>
+  <div class="measure-wide wrap">
+      <div class="clearfix">
+          <div class="logo"><a href="[[~1]]" class="block p1">[[++site_name]]</a></div>
+          <nav role="navigation" class="">
+          <ul role="menu" aria-label="Main menu" class="main">
+            [[getResources? &parents=`-1` &resources=`2,3,4,5` &limit=`4` &sortby=`{"menuindex":"ASC"}` &tpl=`nav-list-row`]]
+          </ul>
+          </nav>
+      </div>
+  </div>
+</header>
+<main role="main" class="measure-wide wrap clearfix">
+    <article role="region" id="article" aria-labelledby="heading" tabindex="0">
+        <h1 id="heading">[[*longtitle:default=`[[*pagetitle]]`]]</h1>
+        [[*content]]
+    </article>
+    <aside tabindex="0" role="complementary"></aside>
+</main>
+
+<footer role="contentinfo"></footer>
+</body>
+</html>
