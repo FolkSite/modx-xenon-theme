@@ -6,3 +6,5 @@ https://www.youtube.com/watch?v=NS5PUMRqRAU&feature=youtu.be
 
 DEMO Site:
 http://xenon-theme-public.clients.modxcloud.com/
+
+![homepage](xenon-screenshot.jpeg)
